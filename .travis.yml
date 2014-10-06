@@ -10,7 +10,8 @@ install:
   - env | grep -i epics
   - which caget
   - ls -l /usr/lib
-  - ls -l /usr/include/epics*
+  - ls -l /usr/include/*epics*
+  - ls -l /usr/bin
 # command to run tests
 script: caget -h
 
