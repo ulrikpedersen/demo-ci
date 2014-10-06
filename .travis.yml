@@ -8,7 +8,10 @@ install:
   - sudo apt-get update -qq
   - sudo apt-get install epics-dev
   - env | grep -i epics
-  - caget -h
+  - which caget
+  - ls -l /opt/epics
+  - ls -l /usr/lib
+  - ls -l /usr/include/epics*
 # command to run tests
 script: caget -h
 
