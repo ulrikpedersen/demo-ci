@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/ulrikpedersen/demo-ci.png?label=ready&title=Ready)](https://waffle.io/ulrikpedersen/demo-ci)
 demo-ci
 =======
 
