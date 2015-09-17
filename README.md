@@ -8,3 +8,8 @@ a demo python module to use for trying out continuous integration solutions
 
 Just a small test change.
 
+Ticket stats
+------------
+
+[![Throughput Graph](https://graphs.waffle.io/ulrikpedersen/demo-ci/throughput.svg)](https://waffle.io/ulrikpedersen/demo-ci/metrics)
+
