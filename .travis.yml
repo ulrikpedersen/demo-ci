@@ -17,11 +17,11 @@ matrix:
       osx_image: xcode7.2
 
 before_install:
-  echo "installing dependencies: " ${EPICS_VERSION}
+  - echo "installing dependencies: " ${EPICS_VERSION}
 
 install:
-  echo "Building"
+  - echo "Building"
 
 script:
-  echo "Running tests"
+  - echo "Running tests"
 
