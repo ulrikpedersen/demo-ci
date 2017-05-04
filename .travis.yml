@@ -1,16 +1,18 @@
 language: c++
 
+env: 
+  global:
+    - EPICS_BASE=/path/to/base
+  matrix:
+    - EPICS_VERSION=R3.14.12.3
+    - EPICS_VERSION=R3.15.3
+
 matrix:
   include:
     - os: linux
       dist: trusty
       sudo: false
-      env: 
-        global:
-          - EPICS_BASE=/path/to/base
-        matrix:
-          - EPICS_VERSION=R3.14.12.3
-          - EPICS_VERSION=R3.15.3
+      
     - os: osx
       osx_image: xcode7.2
 
