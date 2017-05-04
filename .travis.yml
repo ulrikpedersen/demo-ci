@@ -1,13 +1,22 @@
-language: python
-python:
-  - "2.6"
-  - "2.7"
-  - "3.2"
-  - "3.3"
-# command to install dependencies
+language: c++
+
+matrix:
+  include:
+    - os: linux
+      dist: trusty
+      sudo: false
+      env: 
+        - EPICS_VERSION=R3.14.12.3
+        - EPICS_VERSION=R3.15.3
+    - os: osx
+      osx_image: xcode7.2
+
+before_install:
+  echo "installing dependencies: ${EPICS_VERSION}"
+
 install:
-  - sudo apt-get update -qq
-  - sudo apt-get install -qq libhdf5-serial-dev
-  - "pip install -r requirements.txt"
-# command to run tests
-script: nosetests
+  echo "Building"
+
+script:
+  echo "Running tests"
+
