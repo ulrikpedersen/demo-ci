@@ -6,13 +6,16 @@ matrix:
       dist: trusty
       sudo: false
       env: 
-        - EPICS_VERSION=R3.14.12.3
-        - EPICS_VERSION=R3.15.3
+        global:
+          - EPICS_BASE=/path/to/base
+        matrix:
+          - EPICS_VERSION=R3.14.12.3
+          - EPICS_VERSION=R3.15.3
     - os: osx
       osx_image: xcode7.2
 
 before_install:
-  echo "installing dependencies: ${EPICS_VERSION}"
+  echo "installing dependencies: " ${EPICS_VERSION}
 
 install:
   echo "Building"
